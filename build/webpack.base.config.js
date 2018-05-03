@@ -1,0 +1,44 @@
+const path = require("path");
+const webpack = require("webpack");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+
+module.exports = {
+  context: path.resolve(__dirname, "../"),
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "../dist"),
+    publicPath: "/dist/"
+  },
+  //   resolove: {},
+  module: {
+    rules: [
+      {
+        test: /\.vue$/,
+        loader: "vue-loader"
+      },
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: /node_modules/
+      }
+    ]
+  },
+  // devtool: '#source-map',
+  plugins: [
+    //   define varables
+    new webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: JSON.stringify("production")
+      }
+    }),
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        compress: {
+          warnings: false
+        }
+      },
+      //   sourceMap: config.build.productionSourceMap,
+      parallel: true
+    })
+  ]
+};
