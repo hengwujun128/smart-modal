@@ -7,7 +7,9 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "../dist"),
-    publicPath: "/dist/"
+    publicPath: "/dist/",
+    library: "smart-modal",
+    libraryTarget: "umd"
   },
   //   resolove: {},
   module: {
@@ -33,12 +35,14 @@ module.exports = {
     }),
     new UglifyJsPlugin({
       uglifyOptions: {
-        compress: {
-          warnings: false
-        }
-      },
+        mangle: false,
+        beautify: true
+        // compress: {
+        //   warnings: false
+        // }
+      }
       //   sourceMap: config.build.productionSourceMap,
-      parallel: true
+      //   parallel: true
     })
   ]
 };
