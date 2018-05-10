@@ -1,12 +1,12 @@
 {
   "name": "smart-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "this is modal plugin",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build":
-      "webpack --config ./build/webpack.client.config.js --progress --hide-modules"
+      "rimraf ./dist && webpack --config ./build/webpack.client.config.js --progress --hide-modules"
   },
   "dependencies": {
     "vue": "^2.5.2",

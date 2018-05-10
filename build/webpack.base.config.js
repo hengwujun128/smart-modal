@@ -3,18 +3,17 @@ const webpack = require("webpack");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
-  context: path.resolve(__dirname, "../"),
-  entry: "./src/index.js",
+  // context: path.resolve(__dirname, "../"),
+  entry: path.resolve(__dirname, "../src/index.js"),
   output: {
     path: path.resolve(__dirname, "../dist"),
     publicPath: "/dist/",
-    library: "smart-modal",
-    libraryTarget: "umd"
+    libraryTarget: "umd",
+    library: "smart-modal"
   },
   //   resolove: {},
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.vue$/,
         loader: "vue-loader"
       },
