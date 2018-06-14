@@ -47,7 +47,7 @@
 </template>
 <script>
 // 引用plugin
-import Modal from "./index";
+import Modal from "./main.js";
 // 事件处理程序组件
 import Resizer from "./Resizer.vue";
 
