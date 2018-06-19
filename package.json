@@ -1,6 +1,6 @@
 {
   "name": "smart-modal",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "this is modal plugin",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "node-sass": "^4.8.3",
+    "normalize.css": "^8.0.0",
+    "sass-loader": "^7.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
