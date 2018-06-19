@@ -2,10 +2,11 @@
   "name": "smart-modal",
   "version": "1.0.1",
   "description": "this is modal plugin",
-  "main": "src/main.js",
+  "main": "./dist/smartModal.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf ./dist && webpack -p --config ./build/webpack.client.config.js --progress --hide-modules"
+    "dev": "webpack-dev-server --content-base ./dev --env=webpack.dev --open --hot",
+    "build": "rimraf ./dist && webpack -p --env=webpack.pro --progress --hide-modules"
   },
   "dependencies": {
     "vue": "^2.5.16"
@@ -17,6 +18,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.2.0",
     "css-loader": "^0.28.11",
+    "element-ui": "^2.4.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "node-sass": "^4.9.0",
