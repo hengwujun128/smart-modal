@@ -1,6 +1,6 @@
 {
   "name": "smart-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "this is modal plugin",
   "main": "./dist/smartModal.min.js",
   "scripts": {

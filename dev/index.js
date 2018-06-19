@@ -6,8 +6,8 @@ import App from './App.vue'
 // import "element-ui/lib/theme-chalk/index.css";
 
 
-// import SModal from "../src/main.js";
-import SModal from "../dist/smartModal.min.js";
+import SModal from "../src/main.js";
+// import SModal from "../dist/smartModal.min.js";
 
 Vue.use(SModal);
 // Vue.use(ElementUI)

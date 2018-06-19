@@ -27,7 +27,7 @@
             <!-- title slot-->
               <div :class="modalHeaderClass">
                 <span><slot name="title">this is title</slot></span>
-                <span>
+                <span class="close">
                     <a href="javascript:void(0)">&times;</a>
                   </span>
               </div>
@@ -807,13 +807,13 @@ export default {
 }
 
 .v--modal-header {
-  // background: #69caf5;
+  /* // background: #69caf5; */
   background: #029be7;
   color: #ffffff;
   font-size: 18px;
   /* cursor: move; */
   padding: 10px;
-  a {
+  /* a {
     position: absolute;
     top: 0;
     right: 10px;
@@ -825,6 +825,20 @@ export default {
     &:hover {
       color: #f1f1f1;
     }
-  }
+  } */
+}
+.v--modal-header > span.close {
+  /* float: right;
+  cursor: pointer; */
+}
+.v--modal-header > span.close > a {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+  display: block;
+  color: #dddddd;
 }
 </style>
