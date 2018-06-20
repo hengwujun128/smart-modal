@@ -720,7 +720,9 @@ export default {
   }
 };
 </script>
+
 <style scoped>
+/* 编写组件源码不用css预处理器 */
 .v--modal-block-scroll {
   overflow: hidden;
   width: 100vw;
@@ -744,7 +746,7 @@ export default {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-// width and height is equal to  parent div (overlay)
+/* // width and height is equal to  parent div (overlay) */
 .v--modal-overlay .v--modal-background-click {
   min-height: 100%;
   width: 100%;
@@ -827,10 +829,7 @@ export default {
     }
   } */
 }
-.v--modal-header > span.close {
-  /* float: right;
-  cursor: pointer; */
-}
+
 .v--modal-header > span.close > a {
   position: absolute;
   top: 0;

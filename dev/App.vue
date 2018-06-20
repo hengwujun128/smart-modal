@@ -4,7 +4,7 @@
     <modal name="hello" :draggable=draggable :reset=reset :transition="transition" width="50%">
           <h2>xxxx</h2>
     </modal>
-    <button @click="show">click</button>
+    <el-button @click="show">click</el-button>
   </div>
 </template>
 <script>
