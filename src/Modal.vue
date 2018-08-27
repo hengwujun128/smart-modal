@@ -55,7 +55,7 @@ import { inRange } from "./util";
 import parseNumber from "./parser"; // parser.js 使用export default，因此可以改变名称
 
 export default {
-  name: "VueJsModal",
+  name: "smartModal",
   // eighteen property
   props: {
     name: {
