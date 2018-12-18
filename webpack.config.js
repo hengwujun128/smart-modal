@@ -1,6 +1,6 @@
 const merge = require('webpack-merge')
 const utils = require("./build/utils");
-
+// webpack-dev-server ,webpack 命令都会执行webpack.config.js 文件,命令行参数都会带进来
 
 function buildConfig(env) {
   // return require('./build/' + env + '.js')
